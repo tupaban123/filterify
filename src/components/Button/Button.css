@@ -1,0 +1,20 @@
+.button {
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+
+    background-color: #29382E;
+    color: #fff;
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    width: 440px;
+    height: 40px;
+}
+
+.button.green {
+    background-color: #1ABD54;
+    color: #121712;
+}

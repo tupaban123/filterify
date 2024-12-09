@@ -1,0 +1,16 @@
+.reasons.wrapper {
+    margin-bottom: 40px;
+}
+
+.reasons-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reasons-title {
+    margin-bottom: 40px;
+    margin-top: 0;
+
+    font-weight: 800;
+    font-size: 36px;
+}

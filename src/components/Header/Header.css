@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255);
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.header_block-left_image {
+    margin: 15px 15px 15px 0;
+}
+
+.header_block-right_image {
+    margin: 15px 0px 15px 15px;
+}

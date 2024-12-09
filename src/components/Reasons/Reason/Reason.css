@@ -1,0 +1,32 @@
+.reason {
+    width: 220px;
+    height: 150px;
+    background-color: #1C2621;
+    border: 1px solid #3D5245;
+    border-radius: 8px;
+}
+
+.reason-info {
+    padding: 16px 16px 20px 16px;
+}
+
+.reason-step {
+    margin-top: 0;
+    margin-bottom: 12px;
+    
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.reason-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.reason-desc {
+    font-weight: 400;
+    font-size: 14px;
+    color: #9EB8A6;
+}

@@ -1,10 +1,22 @@
-import { useState } from 'react'
+import Header from './components/Header/Header'
+import Hero from './components/Hero/Hero'
+import Reasons from './components/Reasons/Reasons'
 import './App.css'
+import Footer from './components/Footer/Footer'
+
 
 function App() {
   return (
     <>
-      <h1>Filterify</h1>
+      <Header />
+      <div className="main-page">
+        <Hero />
+        <Reasons />
+      </div>
+      {/* <div className="filter-page">
+        
+      </div> */}
+      <Footer />
     </>
   )
 }

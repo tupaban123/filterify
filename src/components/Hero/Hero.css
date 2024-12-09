@@ -1,0 +1,33 @@
+.hero.wrapper {
+    margin-bottom: 40px;
+}
+
+.hero-img {
+    margin-top: 35px;
+    width: 100%;
+    position: relative;
+}
+
+.hero-info {
+    position: absolute;
+    top: 410px;
+    margin-left: 40px;
+}
+
+.hero-info-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.hero-info-desc {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    width: 180px;
+    font-size: 16px;
+}
