@@ -1,0 +1,29 @@
+.inputfield {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+input {
+    max-width: 450px;
+    width: 100%;
+    height: 60px;
+    background-color: #29382E;
+    border-radius: 16px;
+    border: none;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #9EB8A6;
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+label
+{
+    max-width: 450px; 
+    width: 100%; 
+    text-align: left;
+}

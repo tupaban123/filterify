@@ -1,0 +1,31 @@
+.filter-page .wrapper
+{
+    margin-top: 45px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.filter-page-title
+{
+    margin: 0;
+    margin-top: 20px;
+}
+
+.filter-page-desc {
+    margin: 0;
+    margin-top: 12px;
+    font-weight: 300;
+}
+
+.filter-page-form {
+    margin: 0;
+    margin-top: 25px;
+}
+
+.inputfield + .inputfield {
+    margin-top: 25px;
+}
+
+.filter-page-form-button {
+    margin-top: 24px;
+}

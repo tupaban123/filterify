@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap');
 
 :root {
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -12,13 +12,18 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
 }
 
 p {
   font-weight: 400;
   font-size: 16px;
+  color: #fff;
+}
+
+label {
+  font-weight: 500;
   color: #fff;
 }
 
