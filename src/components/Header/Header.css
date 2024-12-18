@@ -14,6 +14,20 @@ header div {
     margin: 15px 15px 15px 0;
 }
 
+.header_block-left
+{
+    cursor: pointer;
+}
+
 .header_block-right_image {
     margin: 15px 0px 15px 15px;
+}
+
+.header-account-action {
+    transition: all 0.3s ease;
+}
+
+.header-account-action:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }

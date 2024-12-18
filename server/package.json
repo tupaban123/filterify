@@ -11,6 +11,11 @@
   "description": "",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.21.2"
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "querystring": "^0.2.1",
+    "request": "^2.88.2",
+    "spotify-web-api-node": "^5.0.2"
   }
 }

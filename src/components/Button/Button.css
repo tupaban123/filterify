@@ -12,9 +12,15 @@
 
     width: 440px;
     height: 40px;
+    transition: all .3s ease;
 }
 
 .button.green {
     background-color: #1ABD54;
     color: #121712;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }

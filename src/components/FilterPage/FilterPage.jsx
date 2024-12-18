@@ -10,7 +10,7 @@ export default function FilterPage() {
 
             <div className="filter-page-info">
                 <h2 className="filter-page-title">Filter playlist by artists</h2>
-                <p className="filter-page-desc">I will create new playlist only with artists you add</p>
+                <p className="filter-page-desc">I will create new playlist on your account only with artists you add</p>
             </div>
 
             <form action="" className="filter-page-form">
