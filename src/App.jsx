@@ -49,8 +49,9 @@ function App() {
       
         if(storedAccessToken)
         {
-          setAccessToken(storedAccessToken)
-          
+          await refreshToken(storedAccessToken, setAccessToken, setDisplayName)
+          storedAccessToken = localStorage.getItem('spotifyAccessToken');
+
           const response = await loadUsername(storedAccessToken);
 
           const result = await response.json();
@@ -59,13 +60,17 @@ function App() {
           if(result.error) {
             if(result.status === 401)
             {
-              console.log('refreshing...');
-              await refreshToken(storedAccessToken)
+              console.log('Error 401 in getting username');
             }
           } 
           else if(result.display_name) {
             setDisplayName(result.display_name);
+
+            setInterval(() => refreshToken(storedAccessToken, setAccessToken, setDisplayName), 3600000);
           }
+        }
+        else {
+          console.log("no stored token");
         }
       }
     }

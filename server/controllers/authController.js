@@ -2,6 +2,7 @@ const querystring = require('querystring');
 const spotifyApi = require('../utils/spotifyApi');
 const { generateRandomString } = require('../utils/generateRandomString');
 const { response } = require('express');
+const { removeTokensPair, saveToken } = require('../utils/tokenManager')
 
 var client_id = process.env.SPOTIFY_CLIENT_ID;
 var client_secret = process.env.SPOTIFY_CLIENT_SECRET;
@@ -51,6 +52,11 @@ exports.callback = async (req, res) => {
         })
     }
     
-    res.json(tokenData);
+    res.redirect('http://localhost:5173/#' + querystring.stringify({
+        access_token: tokenData.access_token
+    }));
+
+    removeTokensPair(tokenData.refresh_token);
+    saveToken(tokenData.access_token, tokenData.refresh_token);
     
 }

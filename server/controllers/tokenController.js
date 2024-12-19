@@ -31,7 +31,7 @@ exports.refreshToken = async (req, res) => {
     if(response.error)
     {
       res.send({
-        'message': 'error',
+        'error': response.error,
         'status': response.status
       });
 
@@ -39,7 +39,6 @@ exports.refreshToken = async (req, res) => {
     }
 
     var access_token = response.access_token;
-    var expires_in = response.expires_in;
 
     removeTokensPair(refresh_token);
     saveToken(access_token, refresh_token);
